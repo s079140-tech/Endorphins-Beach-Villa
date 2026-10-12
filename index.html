@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Endorphins Beach Villa | Dhiffushi, Maldives</title>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#FAFAF8;--surface:#fff;--sand:#F4F3F1;--text:#27475c;--head:#0B3C5D;--accent:#328CC1;--teal:#66BFBF;--line:#e4e2dc;--wa:#25D366;--wa2:#1EBE5D;--shadow:0 10px 30px -10px rgba(11,60,93,.12);--hero:linear-gradient(180deg,#7fd3e0 0%,#3fb3c9 45%,#e9dcb8 46%,#f4ead0 100%)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#08151f;--surface:#0f2331;--sand:#12293a;--text:#b8cdda;--head:#e6f3fb;--accent:#5fb3e3;--teal:#66BFBF;--line:#1f3a4d;--shadow:0 10px 30px -10px rgba(0,0,0,.5);--hero:linear-gradient(180deg,#0b2a3d 0%,#0e4a63 45%,#3a3a30 46%,#2a2a24 100%)}}
+:root[data-theme="dark"]{--bg:#08151f;--surface:#0f2331;--sand:#12293a;--text:#b8cdda;--head:#e6f3fb;--accent:#5fb3e3;--teal:#66BFBF;--line:#1f3a4d;--shadow:0 10px 30px -10px rgba(0,0,0,.5);--hero:linear-gradient(180deg,#0b2a3d 0%,#0e4a63 45%,#3a3a30 46%,#2a2a24 100%)}
+*{box-sizing:border-box;margin:0}
+html{scroll-behavior:smooth;scroll-padding-top:80px}
+:root{padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+body{font-family:'Plus Jakarta Sans',system-ui,sans-serif;background:var(--bg);color:var(--text);line-height:1.6;transition:background .3s,color .3s}
+h1,h2,h3{color:var(--head);line-height:1.2;font-weight:700}
+a{color:inherit;text-decoration:none}
+.wrap{max-width:1180px;margin:0 auto;padding:0 20px}
+header{position:sticky;top:env(safe-area-inset-top,0px);z-index:20;background:color-mix(in srgb,var(--bg) 88%,transparent);backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
+.nav{display:flex;align-items:center;gap:18px;height:68px}
+.logo{display:flex;align-items:center;gap:10px;font-weight:700;color:var(--head)}
+.nav-links{display:flex;gap:22px;margin-left:auto;font-size:14px;font-weight:500}
+.nav-links a:hover{color:var(--accent)}
+.btn{display:inline-flex;align-items:center;gap:8px;border:0;border-radius:999px;padding:11px 20px;font:600 14px inherit;font-family:inherit;cursor:pointer;transition:.2s}
+.btn-wa{background:var(--wa);color:#04361a}.btn-wa:hover{background:var(--wa2);transform:translateY(-1px)}
+.btn-ghost{background:var(--surface);color:var(--head);border:1px solid var(--line)}
+.icon-btn{width:40px;height:40px;padding:0;justify-content:center}
+.dot{width:8px;height:8px;border-radius:50%;background:var(--wa);box-shadow:0 0 0 0 rgba(37,211,102,.6);animation:p 2s infinite}
+@keyframes p{70%{box-shadow:0 0 0 8px rgba(37,211,102,0)}}
+.hero{background:var(--hero);padding:84px 0 110px;position:relative;overflow:hidden}
+.hero h1{font-size:clamp(32px,6vw,58px);max-width:760px;color:#fff;text-shadow:0 2px 20px rgba(0,40,70,.35)}
+.hero p.sub{color:#fff;font-size:clamp(16px,2.2vw,20px);margin:14px 0 22px;max-width:560px;text-shadow:0 1px 12px rgba(0,40,70,.4)}
+.pills{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:34px}
+.pill{background:rgba(255,255,255,.22);backdrop-filter:blur(6px);color:#fff;border:1px solid rgba(255,255,255,.4);padding:6px 14px;border-radius:999px;font-size:13px;font-weight:500}
+.sun{position:absolute;right:8%;top:50px;width:120px;height:120px;border-radius:50%;background:radial-gradient(#fff6c8,#ffd36b);opacity:.85;filter:blur(1px)}
+.bar{background:var(--surface);border-radius:16px;box-shadow:var(--shadow);padding:16px;display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:12px;align-items:end;max-width:960px;position:relative}
+label{display:block;font-size:12px;font-weight:600;color:var(--head);margin-bottom:4px}
+input,select{width:100%;padding:11px 12px;border-radius:12px;border:1px solid var(--line);background:var(--bg);color:var(--head);font:500 14px inherit;font-family:inherit}
+section{padding:72px 0}
+.eyebrow{color:var(--accent);font-weight:700;font-size:12px;letter-spacing:.12em;text-transform:uppercase}
+h2{font-size:clamp(26px,4vw,38px);margin:6px 0 10px}
+.lead{max-width:620px;margin-bottom:34px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:20px}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:16px;box-shadow:var(--shadow);overflow:hidden;display:flex;flex-direction:column}
+.card .img{height:150px;display:grid;place-items:center;font-size:44px}
+.card .body{padding:20px;display:flex;flex-direction:column;gap:10px;flex:1}
+.price{color:var(--head);font-size:26px;font-weight:700}.price small{font-size:13px;font-weight:500;color:var(--text)}
+.tags{display:flex;flex-wrap:wrap;gap:6px}
+.tag{background:var(--sand);color:var(--accent);font-size:12px;font-weight:600;padding:4px 10px;border-radius:999px}
+.card .btn{margin-top:auto;justify-content:center}
+.alt{background:var(--sand)}
+.stat{font-size:42px;font-weight:700;color:var(--head)}
+.quote{font-size:15px}.quote b{color:var(--head);display:block;margin-top:8px;font-size:13px}
+.walk{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:14px}
+.walk div{background:var(--surface);border:1px solid var(--line);border-radius:16px;padding:16px}
+.walk b{color:var(--head);display:block}
+footer{border-top:1px solid var(--line);padding:36px 0 110px;font-size:13px}
+.fab{position:fixed;right:18px;bottom:calc(18px + env(safe-area-inset-bottom,0px));z-index:30;display:flex;flex-direction:column;align-items:flex-end;gap:10px}
+.fab .btn{box-shadow:0 8px 24px rgba(0,0,0,.25)}
+.btn-ai{background:var(--head);color:var(--bg)}
+#chat{display:none;width:min(380px,calc(100vw - 36px));height:min(520px,70vh);background:var(--surface);border:1px solid var(--line);border-radius:16px;box-shadow:0 20px 50px -10px rgba(0,0,0,.35);flex-direction:column;overflow:hidden}
+#chat.open{display:flex}
+.ch{padding:14px 16px;background:var(--head);color:var(--bg);display:flex;justify-content:space-between;align-items:center;font-weight:600;font-size:14px}
+.ch button{background:none;border:0;color:inherit;font-size:20px;cursor:pointer}
+#msgs{flex:1;overflow-y:auto;padding:14px;display:flex;flex-direction:column;gap:10px}
+.m{max-width:86%;padding:10px 13px;border-radius:14px;font-size:14px;white-space:pre-wrap}
+.m.bot{background:var(--sand);color:var(--text);border-bottom-left-radius:4px}
+.m.me{background:var(--accent);color:#fff;align-self:flex-end;border-bottom-right-radius:4px}
+.chips{display:flex;flex-wrap:wrap;gap:6px;padding:0 14px 8px}
+.chips button{border:1px solid var(--line);background:var(--bg);color:var(--head);border-radius:999px;padding:5px 11px;font:500 12px inherit;font-family:inherit;cursor:pointer}
+.cf{display:flex;gap:8px;padding:10px;border-top:1px solid var(--line)}
+.cf input{flex:1}
+.cf button{padding:0 16px}
+.waline{padding:8px 14px 12px;font-size:12px;text-align:center}
+.waline a{color:var(--wa2);font-weight:700}
+@media(max-width:820px){.nav-links{display:none}.nav .btn-wa span.long{display:none}.nav>.btn-wa{margin-left:auto}}
+</style>
+</head>
+<body>
+<header><div class="wrap nav">
+  <a class="logo" href="#top" aria-label="Endorphins Beach Villa home">
+    <svg width="34" height="34" viewBox="0 0 40 40" aria-hidden="true"><circle cx="20" cy="20" r="19" fill="#0B3C5D"/><circle cx="20" cy="15" r="6" fill="#FFD36B"/><path d="M5 25c4-4 7-4 10 0s7 4 10 0 7-4 10 0" stroke="#66BFBF" stroke-width="2.5" fill="none" stroke-linecap="round"/><path d="M5 31c4-4 7-4 10 0s7 4 10 0 7-4 10 0" stroke="#328CC1" stroke-width="2.5" fill="none" stroke-linecap="round"/></svg>
+    <span>Endorphins</span></a>
+  <nav class="nav-links"><a href="#rooms">Rooms &amp; Suites</a><a href="#amenities">Pool &amp; Amenities</a><a href="#excursions">Excursions</a><a href="#location">Location &amp; Transfer</a><a href="#guide">Island Guide</a></nav>
+  <a class="btn btn-wa" data-wa="general" href="#" target="_blank" rel="noopener"><i class="dot"></i><span class="long">WhatsApp Concierge</span><span>+960 799 8811</span></a>
+  <button class="btn btn-ghost icon-btn" id="theme" aria-label="Toggle dark or light mode" title="Toggle theme">🌓</button>
+</div></header>
+
+<main id="top">
+<div class="hero"><div class="sun"></div><div class="wrap">
+  <h1>Endorphins Beach Villa | Dhiffushi, Maldives</h1>
+  <p class="sub">Your intimate island escape just steps from crystal-clear turquoise waters.</p>
+  <div class="pills"><span class="pill">🚤 40-min Speedboat Transfer</span><span class="pill">🏊 Rooftop Pool, Ocean View</span><span class="pill">🐢 House Reef Snorkeling</span><span class="pill">🍳 Daily Breakfast Included</span></div>
+  <div class="bar" id="q">
+    <div><label for="ci">Check-in</label><input type="date" id="ci"></div>
+    <div><label for="co">Check-out</label><input type="date" id="co"></div>
+    <div><label for="rt">Room type</label><select id="rt"><option>Deluxe Double Room (Sea View)</option><option>Superior Twin / Double Room</option><option>Quadruple Family Room</option></select></div>
+    <div><label for="gs">Guests</label><select id="gs"><option>1</option><option selected>2</option><option>3</option><option>4</option><option>5+</option></select></div>
+    <a class="btn btn-wa" data-wa="form" href="#" target="_blank" rel="noopener" style="justify-content:center">Check on WhatsApp</a>
+  </div>
+</div></div>
+
+<section id="rooms"><div class="wrap">
+  <div class="eyebrow">Accommodation</div><h2>Rooms &amp; Suites</h2>
+  <p class="lead">Book direct and skip the OTA fees. Breakfast is included with every stay.</p>
+  <div class="grid">
+    <article class="card"><div class="img" style="background:linear-gradient(135deg,#66BFBF,#328CC1)">🌅</div><div class="body"><h3>Deluxe Double Room (Sea View)</h3><div class="price">$75 <small>/ night, from</small></div><p>King bed, private ocean-facing balcony, ensuite rain shower, organic toiletries, split A/C.</p><div class="tags"><span class="tag">Balcony</span><span class="tag">Rain shower</span><span class="tag">Couples</span></div><a class="btn btn-wa" data-wa="room" data-room="Deluxe Double Room (Sea View)" href="#" target="_blank" rel="noopener">Enquire / Book via WhatsApp</a></div></article>
+    <article class="card"><div class="img" style="background:linear-gradient(135deg,#328CC1,#0B3C5D)">🛏️</div><div class="body"><h3>Superior Twin / Double Room</h3><div class="price">$65 <small>/ night, from</small></div><p>Garden &amp; city view, two twin singles or a queen bed, workstation desk, Starlink Wi-Fi.</p><div class="tags"><span class="tag">Starlink Wi-Fi</span><span class="tag">Workstation</span><span class="tag">Divers</span></div><a class="btn btn-wa" data-wa="room" data-room="Superior Twin / Double Room" href="#" target="_blank" rel="noopener">Enquire / Book via WhatsApp</a></div></article>
+    <article class="card"><div class="img" style="background:linear-gradient(135deg,#e9dcb8,#66BFBF)">👨‍👩‍👧‍👦</div><div class="body"><h3>Quadruple Family Room</h3><div class="price">$110 <small>/ night, from</small></div><p>1 king bed + 2 twin beds, living corner, mini fridge, safe, ensuite bathroom.</p><div class="tags"><span class="tag">Sleeps 4</span><span class="tag">Mini fridge</span><span class="tag">Families</span></div><a class="btn btn-wa" data-wa="room" data-room="Quadruple Family Room" href="#" target="_blank" rel="noopener">Enquire / Book via WhatsApp</a></div></article>
+  </div>
+</div></section>
+
+<section id="amenities" class="alt"><div class="wrap">
+  <div class="eyebrow">On site</div><h2>Rooftop Pool &amp; Amenities</h2>
+  <div class="grid">
+    <div class="card"><div class="body"><h3>🏊 Rooftop &amp; Lagoon Pool</h3><p>Free for in-house guests. Visitor day pass <b>$15/day</b>, with sunbed and fresh towel.</p></div></div>
+    <div class="card"><div class="body"><h3>🍽️ Maldivian Breakfast</h3><p>Fresh Mas Huni, roshi flatbread, tropical fruit platters and international choices.</p></div></div>
+    <div class="card"><div class="body"><h3>📶 Connectivity &amp; Concierge</h3><p>Starlink Wi-Fi, 24/7 WhatsApp island host, daily housekeeping and luggage porter.</p></div></div>
+  </div>
+</div></section>
+
+<section id="excursions"><div class="wrap">
+  <div class="eyebrow">Experiences</div><h2>Curated Excursions</h2>
+  <div class="grid">
+    <div class="card"><div class="body"><h3>🐢 House Reef Snorkeling Safari</h3><p>Free mask and fin fitting. Meet sea turtles, harmless reef sharks and coral gardens.</p><a class="btn btn-ghost" data-wa="ex" data-ex="House Reef Snorkeling Safari" href="#" target="_blank" rel="noopener">Ask on WhatsApp</a></div></div>
+    <div class="card"><div class="body"><h3>🐬 Sandbank &amp; Dolphin Watching</h3><p>Speedboat to secluded sandbars with picnic refreshments and spinner dolphin spotting.</p><a class="btn btn-ghost" data-wa="ex" data-ex="Sandbank & Dolphin Watching" href="#" target="_blank" rel="noopener">Ask on WhatsApp</a></div></div>
+    <div class="card"><div class="body"><h3>🚤 Airport Speedboat Transfer</h3><p>40–45 min daily scheduled boats between MLE and Dhiffushi jetty. <b>$35/person each way.</b></p><a class="btn btn-ghost" data-wa="ex" data-ex="Airport Speedboat Transfer" href="#" target="_blank" rel="noopener">Ask on WhatsApp</a></div></div>
+    <div class="card"><div class="body"><h3>🎣 Sunset Fishing &amp; BBQ</h3><p>Traditional hand-line night fishing, with your catch cooked fresh by the villa chef.</p><a class="btn btn-ghost" data-wa="ex" data-ex="Sunset Hand-Line Fishing & BBQ Dinner" href="#" target="_blank" rel="noopener">Ask on WhatsApp</a></div></div>
+  </div>
+</div></section>
+
+<section id="location" class="alt"><div class="wrap">
+  <div class="eyebrow">Getting here</div><h2>Location &amp; Transfer</h2>
+  <p class="lead">Dhiffushi Island, North Malé Atoll. Land at Velana International Airport (MLE), then a 40–45 minute speedboat to the island jetty. Tell us your flight and we will match your transfer.</p>
+  <div class="grid">
+    <div class="card"><div class="body"><div class="stat">9.4/10</div><p>Based on 180+ verified reviews from Germany, UK, Italy and Singapore.</p></div></div>
+    <div class="card"><div class="body quote">“Turquoise lagoon right outside, super friendly host, and breakfast every morning on the roof.”<b>Guest from Germany</b></div></div>
+    <div class="card"><div class="body quote">“Snorkeled with turtles on day one. Great value compared to the big resorts.”<b>Guest from the UK</b></div></div>
+  </div>
+</div></section>
+
+<section id="guide"><div class="wrap">
+  <div class="eyebrow">Island Guide</div><h2>Everything is a short walk</h2>
+  <div class="walk"><div><b>🏖️ Bikini Beach</b>2 min walk</div><div><b>🤿 Water sports centre</b>Nearby</div><div><b>☕ Local cafes</b>Nearby</div><div><b>⚓ Harbour dock</b>Nearby</div></div>
+</div></section>
+</main>
+
+<footer><div class="wrap">© Endorphins Beach Villa, Dhiffushi, Maldives. Guesthouse licence details, guest privacy policy and direct payment terms are shared on request via WhatsApp. Rates shown are starting prices and may vary by season.</div></footer>
+
+<div class="fab">
+  <div id="chat" role="dialog" aria-label="Island concierge AI">
+    <div class="ch"><span>🌴 Island Concierge (AI)</span><button id="x" aria-label="Close chat">×</button></div>
+    <div id="msgs"></div>
+    <div class="chips" id="chips"><button>Rooms &amp; prices</button><button>Airport transfer</button><button>Best excursions</button><button>Family stay</button></div>
+    <form class="cf" id="cf"><input id="ci2" placeholder="Ask about rooms, transfers, trips…" autocomplete="off"><button class="btn btn-ai" type="submit">Send</button></form>
+    <div class="waline">Ready to book? <a data-wa="chat" href="#" target="_blank" rel="noopener">Continue on WhatsApp →</a></div>
+  </div>
+  <button class="btn btn-ai" id="ai">✨ Ask our AI</button>
+  <a class="btn btn-wa" data-wa="form" href="#" target="_blank" rel="noopener"><i class="dot"></i>WhatsApp</a>
+</div>
+
+<script>
+const NUM="9607998811",$=s=>document.querySelector(s),$$=s=>[...document.querySelectorAll(s)];
+// Theme
+const root=document.documentElement;
+try{const t=localStorage.getItem("ebv-theme");if(t)root.dataset.theme=t}catch(e){}
+$("#theme").onclick=()=>{const dark=root.dataset.theme?root.dataset.theme==="dark":matchMedia("(prefers-color-scheme:dark)").matches;root.dataset.theme=dark?"light":"dark";try{localStorage.setItem("ebv-theme",root.dataset.theme)}catch(e){}};
+// Dates
+const iso=d=>d.toISOString().slice(0,10),today=new Date(),ci=$("#ci"),co=$("#co");
+ci.min=co.min=iso(today);
+ci.onchange=()=>{co.min=ci.value;if(!co.value||co.value<=ci.value){const d=new Date(ci.value);d.setDate(d.getDate()+1);co.value=iso(d)}};
+// WhatsApp
+let chatLog=[];
+const link=t=>`https://wa.me/${NUM}?text=${encodeURIComponent(t)}`;
+function waText(kind,el){
+  const room=kind==="room"?el.dataset.room:$("#rt").value,a=ci.value||"[Check-in Date]",b=co.value||"[Check-out Date]",g=$("#gs").value;
+  if(kind==="general")return"Hi Endorphins Beach Villa, I'd like to ask about availability and rates.";
+  if(kind==="ex")return`Hi Endorphins Beach Villa, I'd like details and prices for: ${el.dataset.ex}.`;
+  if(kind==="chat"){const u=chatLog.filter(m=>m.role==="user").map(m=>m.content).slice(-3).join(" | ");return`Hi Endorphins Beach Villa, I was chatting with your website assistant and would like to book.${u?" My questions: "+u:""}`}
+  return`Hi Endorphins Beach Villa, I would like to check availability for ${room} from ${a} to ${b} for ${g} guest(s).`;
+}
+document.addEventListener("click",e=>{const el=e.target.closest("[data-wa]");if(el)el.href=link(waText(el.dataset.wa,el))},true);
+// AI agent
+const SYS=`You are the friendly AI concierge for Endorphins Beach Villa, a boutique guesthouse on Dhiffushi Island, North Malé Atoll, Maldives. Answer ONLY from these facts; if unsure, say the WhatsApp team (+960 799 8811) will confirm. Be warm, concise (under 90 words), plain text, no markdown.
+FACTS: 40-45 min speedboat from Velana Airport (MLE), $35/person each way, daily scheduled boats. Rooms (from, per night, breakfast included): Deluxe Double Sea View $75 (king bed, ocean balcony, rain shower, A/C); Superior Twin/Double $65 (garden/city view, workstation, Starlink Wi-Fi); Quadruple Family Room $110 (1 king + 2 twins, living corner, mini fridge, safe). Rooftop pool free for guests, visitor day pass $15 with sunbed and towel. Maldivian breakfast daily (Mas Huni, roshi, fruit). Excursions: house reef snorkeling safari (free gear, turtles, reef sharks), sandbank and dolphin trip with picnic, sunset hand-line fishing with BBQ dinner. Bikini Beach 2 minutes walk. 24/7 WhatsApp host, daily housekeeping, luggage porter. Rating 9.4/10 from 180+ reviews. Never invent availability or exact excursion prices; availability and bookings are confirmed on WhatsApp. When someone is ready to book, tell them to tap Continue on WhatsApp.`;
+const FAQ=[[/transfer|airport|speedboat|boat|mle|flight/,"A scheduled speedboat runs daily between Velana Airport (MLE) and Dhiffushi jetty. It takes 40–45 minutes and costs $35 per person each way. Send us your flight details on WhatsApp and we'll match your transfer."],[/family|kid|child|four|quad/,"The Quadruple Family Room (from $110/night) has a king bed plus two twins, a living corner, mini fridge and safe, with breakfast included. Dhiffushi's lagoon beach is calm and great for kids."],[/price|rate|cost|how much|room|stay|night|cheap/,"Rooms from: Deluxe Double Sea View $75, Superior Twin/Double $65, Quadruple Family Room $110 per night, breakfast included. Tell me your dates and I can prepare a WhatsApp enquiry."],[/snorkel|dive|reef|turtle|excursion|trip|dolphin|fish|sandbank/,"Popular trips: house reef snorkeling (free gear, turtles and reef sharks), sandbank and dolphin watching with a picnic, and sunset hand-line fishing with a BBQ. Message us on WhatsApp for current prices."],[/pool|breakfast|wifi|wi-fi|food|amenit/,"There's a rooftop pool with ocean views (free for guests, $15 day pass for visitors), a daily Maldivian breakfast, and fast Starlink Wi-Fi throughout."]];
+const local=q=>{q=q.toLowerCase();for(const[r,a]of FAQ)if(r.test(q))return a;return"Happy to help! Ask me about rooms, transfers, excursions or the pool, or tap Continue on WhatsApp and our island host will reply personally."};
+const msgs=$("#msgs");let sample=undefined,busy=false;
+function add(t,c){const d=document.createElement("div");d.className="m "+c;d.textContent=t;msgs.appendChild(d);msgs.scrollTop=msgs.scrollHeight;return d}
+async function ask(q){
+  if(busy||!q.trim())return;busy=true;add(q,"me");chatLog.push({role:"user",content:q});$("#chips").style.display="none";
+  const out=add("…","bot");let ans;
+  try{
+    if(sample===undefined)sample=window.claude?await window.claude.use("sample"):null;
+    if(!sample)throw 0;
+    const hist=chatLog.slice(-8).map(m=>`${m.role==="user"?"Guest":"Concierge"}: ${m.content}`).join("\n");
+    const r=await sample(`${SYS}\n\nConversation:\n${hist}\n\nReply as the Concierge to the last guest message.`,{cache:false,modelTier:"quick",onText:({text})=>{out.textContent=text;msgs.scrollTop=msgs.scrollHeight}});
+    ans=r.text;
+  }catch(e){sample=null;ans=local(q)}
+  out.textContent=ans;chatLog.push({role:"assistant",content:ans});busy=false;msgs.scrollTop=msgs.scrollHeight;
+}
+$("#ai").onclick=()=>{$("#chat").classList.toggle("open");if(!msgs.children.length)add("Salaam! 🌴 I'm the Endorphins Beach Villa concierge. Ask me about rooms, speedboat transfers, snorkeling or the rooftop pool.","bot")};
+$("#x").onclick=()=>$("#chat").classList.remove("open");
+$("#cf").onsubmit=e=>{e.preventDefault();const i=$("#ci2"),v=i.value;i.value="";ask(v)};
+$("#chips").onclick=e=>{if(e.target.tagName==="BUTTON")ask(e.target.textContent)};
+</script>
+</body>
+</html>
